@@ -1,0 +1,1294 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/kadou/ontologies/2023/1/oilApplication"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/kadou/ontologies/2023/1/oilApplication">
+    <Prefix name="" IRI="http://www.semanticweb.org/kadou/ontologies/2023/1/oilApplication"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Development of microservices-based application profile ontology based models for &quot;oil and gas assets application&quot;</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorrectiveMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataIngestion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataVisualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTTP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MQTT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaintenanceStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microservice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OilRig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prediction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreventiveMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refinery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regulator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkflowManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AggregateData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Communicate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Orchestrate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToAsset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coordinate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccessTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAsset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCommunicationMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMicroservice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPipeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProductionData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensorData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMaintainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProvidedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConsuemrType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConsumerLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConsumerName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MaintenanceStaff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Microservice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OilRig"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Pipelength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Refinery"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RefineryCapac"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RefineryType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Regulator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#asset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assetID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assetLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assetOwner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#assetType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#externalData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#microserviceID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#microserviceLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#microserviceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#microserviceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pipelinaDiameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productionData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productionVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rigOperator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rigType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#D01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#D02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Micro01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Micro02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User02"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorrectiveMaintenance"/>
+        <Class IRI="#Maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataAnalysis"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataIngestion"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataManagement"/>
+        <Class IRI="#Microservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataProcessing"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataQuality"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStorage"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataVisualization"/>
+        <Class IRI="#DataManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#InternalUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalUser"/>
+        <Class IRI="#Consumer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HTTP"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalUser"/>
+        <Class IRI="#Consumer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MQTT"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Microservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaintenanceStaff"/>
+        <Class IRI="#ExternalUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#InternalUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microservice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OilRig"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipeline"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prediction"/>
+        <Class IRI="#Microservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreventiveMaintenance"/>
+        <Class IRI="#Maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refinery"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regulator"/>
+        <Class IRI="#ExternalUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserManagement"/>
+        <Class IRI="#Microservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebSocket"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkflowManagement"/>
+        <Class IRI="#Microservice"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#OilRig"/>
+        <NamedIndividual IRI="#AS01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pipeline"/>
+        <NamedIndividual IRI="#AS02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refinery"/>
+        <NamedIndividual IRI="#AS03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SensorData"/>
+        <NamedIndividual IRI="#D01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionData"/>
+        <NamedIndividual IRI="#D02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataManagement"/>
+        <NamedIndividual IRI="#Micro01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UserManagement"/>
+        <NamedIndividual IRI="#Micro02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engineer"/>
+        <NamedIndividual IRI="#User01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regulator"/>
+        <NamedIndividual IRI="#User02"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ConsumerLocation"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal>BISKRA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ConsumerName"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal>Wassim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal>wassim@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Engineer"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Phone"/>
+        <NamedIndividual IRI="#User01"/>
+        <Literal>0555545857</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPipeline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProductionData"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensorData"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMaintainedBy"/>
+        <ObjectProperty IRI="#isPerformedOn"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#AggregateData"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Communicate"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ComposedOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#belongsToAsset"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#coordinate"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#dependsOn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAccessTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAsset"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCommunicationMethod"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasData"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDataSource"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPipeline"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasProductionData"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSensorData"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMaintainedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isProvidedBy"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#AggregateData"/>
+        <Class IRI="#DataAnalysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Communicate"/>
+        <Class IRI="#UserManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Orchestrate"/>
+        <Class IRI="#WorkflowManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToAsset"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToAsset"/>
+        <Class IRI="#ExternalData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#Communication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#Consumer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#ExternalUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#InternalUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAsset"/>
+        <Class IRI="#Pipeline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCommunicationMethod"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Pipeline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Refinery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataSource"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+        <Class IRI="#OilRig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicroservice"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicroservice"/>
+        <Class IRI="#ExternalData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPipeline"/>
+        <Class IRI="#Refinery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProductionData"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProductionData"/>
+        <Class IRI="#OilRig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensorData"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensorData"/>
+        <Class IRI="#OilRig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMaintainedBy"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedOn"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProvidedBy"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AggregateData"/>
+        <Class IRI="#ExternalData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AggregateData"/>
+        <Class IRI="#ProductionData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AggregateData"/>
+        <Class IRI="#SensorData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Communicate"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataAnalysis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataIngestion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataProcessing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataQuality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataStorage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComposedOf"/>
+        <Class IRI="#DataVisualization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToAsset"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#DataManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#Prediction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#UserManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinate"/>
+        <Class IRI="#WorkflowManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAsset"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCommunicationMethod"/>
+        <Class IRI="#Communication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataSource"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaintenanceRecord"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMicroservice"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPipeline"/>
+        <Class IRI="#Pipeline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProductionData"/>
+        <Class IRI="#ProductionData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensorData"/>
+        <Class IRI="#SensorData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMaintainedBy"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedOn"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProvidedBy"/>
+        <Class IRI="#Microservice"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConsuemrType"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConsumerLocation"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConsumerName"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Email"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Engineer"/>
+        <DataProperty IRI="#ConsuemrType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MaintenanceStaff"/>
+        <DataProperty IRI="#ConsuemrType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Manager"/>
+        <DataProperty IRI="#ConsuemrType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OilRig"/>
+        <DataProperty IRI="#assetType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Phone"/>
+        <DataProperty IRI="#Consumer"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Pipelength"/>
+        <DataProperty IRI="#Pipeline"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Pipeline"/>
+        <DataProperty IRI="#assetType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Refinery"/>
+        <DataProperty IRI="#assetType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RefineryCapac"/>
+        <DataProperty IRI="#Refinery"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RefineryType"/>
+        <DataProperty IRI="#Refinery"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Regulator"/>
+        <DataProperty IRI="#ConsuemrType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#assetID"/>
+        <DataProperty IRI="#asset"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#assetLocation"/>
+        <DataProperty IRI="#asset"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#assetName"/>
+        <DataProperty IRI="#asset"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#assetOwner"/>
+        <DataProperty IRI="#asset"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#assetType"/>
+        <DataProperty IRI="#asset"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dataID"/>
+        <DataProperty IRI="#data"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dataLocation"/>
+        <DataProperty IRI="#data"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dataSource"/>
+        <DataProperty IRI="#data"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dataType"/>
+        <DataProperty IRI="#data"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#eventID"/>
+        <DataProperty IRI="#productionData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#externalData"/>
+        <DataProperty IRI="#dataType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#microserviceID"/>
+        <DataProperty IRI="#Microservice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#microserviceLocation"/>
+        <DataProperty IRI="#Microservice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#microserviceName"/>
+        <DataProperty IRI="#Microservice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#microserviceType"/>
+        <DataProperty IRI="#Microservice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pipelinaDiameter"/>
+        <DataProperty IRI="#Pipeline"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productionData"/>
+        <DataProperty IRI="#dataType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productionType"/>
+        <DataProperty IRI="#productionData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productionVolume"/>
+        <DataProperty IRI="#productionData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rigOperator"/>
+        <DataProperty IRI="#OilRig"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rigType"/>
+        <DataProperty IRI="#OilRig"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensorData"/>
+        <DataProperty IRI="#dataType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensorID"/>
+        <DataProperty IRI="#sensorData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensorLocation"/>
+        <DataProperty IRI="#sensorData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensorType"/>
+        <DataProperty IRI="#sensorData"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ConsuemrType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Consumer"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ConsumerLocation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ConsumerName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Email"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Engineer"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#MaintenanceStaff"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Manager"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Microservice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Phone"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Pipelength"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Regulator"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#asset"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#assetID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#assetLocation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#assetName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#assetType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#data"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dataID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dataLocation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dataSource"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#eventID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#externalData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pipelinaDiameter"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#productionData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#productionType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#productionVolume"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sensorData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sensorID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sensorLocation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sensorType"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ConsuemrType"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ConsumerLocation"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ConsumerName"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Email"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Engineer"/>
+        <Class IRI="#Engineer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ID"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaintenanceStaff"/>
+        <Class IRI="#MaintenanceStaff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Manager"/>
+        <Class IRI="#Manager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OilRig"/>
+        <Class IRI="#OilRig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Phone"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Pipelength"/>
+        <Class IRI="#Pipeline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Pipeline"/>
+        <Class IRI="#Pipeline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Refinery"/>
+        <Class IRI="#Refinery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RefineryCapac"/>
+        <Class IRI="#Refinery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RefineryType"/>
+        <Class IRI="#Refinery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Regulator"/>
+        <Class IRI="#Regulator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assetID"/>
+        <Class IRI="#Asset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assetLocation"/>
+        <Class IRI="#Asset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assetName"/>
+        <Class IRI="#Asset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assetOwner"/>
+        <Class IRI="#Asset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#assetType"/>
+        <Class IRI="#Asset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataID"/>
+        <Class IRI="#Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataLocation"/>
+        <Class IRI="#Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataSource"/>
+        <Class IRI="#Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataType"/>
+        <Class IRI="#Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eventID"/>
+        <Class IRI="#ProductionData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#externalData"/>
+        <Class IRI="#ExternalData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#microserviceID"/>
+        <Class IRI="#Microservice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#microserviceLocation"/>
+        <Class IRI="#Microservice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#microserviceName"/>
+        <Class IRI="#Microservice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#microserviceType"/>
+        <Class IRI="#Microservice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productionData"/>
+        <Class IRI="#ProductionData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productionType"/>
+        <Class IRI="#ProductionData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productionVolume"/>
+        <Class IRI="#ProductionData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rigOperator"/>
+        <Class IRI="#OilRig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rigType"/>
+        <Class IRI="#OilRig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorData"/>
+        <Class IRI="#SensorData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorID"/>
+        <Class IRI="#SensorData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorLocation"/>
+        <Class IRI="#SensorData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorType"/>
+        <Class IRI="#SensorData"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#assetID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#assetLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#assetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#assetOwner"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#assetType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
